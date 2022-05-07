@@ -10,7 +10,6 @@ const debug = require('debug')('express-xmongo:server');
 const http = require('http');
 const {connectToDb} = require('../database/xmongo');
 
-
 async function startAppAsync() {
   // Connect to the database
   await connectToDb();
@@ -20,7 +19,6 @@ async function startAppAsync() {
    * all routes will be able to use the database connection.
    */
   const app = require('../app');
-  
   
   /**
    * Get port from environment and store in Express.
